@@ -37,11 +37,20 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-primary);
+/* Nuevas Reglas para el Logo de Imagen */
+.logo-container {
+  display: flex;
+  align-items: center; /* Asegura la alineación vertical con la navegación */
   text-decoration: none;
+}
+
+.header-logo {
+  height: 40px; /* Define la altura del logo en el header */
+  width: auto; /* Mantiene la proporción */
+  vertical-align: middle; 
+  /* Si tu logo tiene fondo blanco y quieres un pequeño borde o sombra: */
+  /* border: 1px solid var(--color-background); */ 
+  /* border-radius: 50%; */ 
 }
 
 nav a {
