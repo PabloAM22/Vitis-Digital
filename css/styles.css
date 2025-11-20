@@ -28,35 +28,44 @@ body {
   padding: 0 2rem;
 }
 
+/* HEADER */
 header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
-  background-color: var(--color-light-text);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1rem 2rem;
 }
 
-/* Nuevas Reglas para el Logo de Imagen */
 .logo-container {
   display: flex;
-  align-items: center; /* Asegura la alineación vertical con la navegación */
+  align-items: center;
   text-decoration: none;
+  margin-left: -1cm;
 }
 
 .header-logo {
-  height: 40px; /* Define la altura del logo en el header */
-  width: auto; /* Mantiene la proporción */
-  vertical-align: middle; 
-  /* Si tu logo tiene fondo blanco y quieres un pequeño borde o sombra: */
-  /* border: 1px solid var(--color-background); */ 
-  /* border-radius: 50%; */ 
+  height: 91px;
+  width: auto;
+  vertical-align: middle;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 nav a {
   text-decoration: none;
   color: var(--color-text);
-  margin-left: 1.5rem;
   font-size: 0.95rem;
   font-weight: 500;
   transition: color 0.2s;
@@ -66,6 +75,7 @@ nav a:hover {
   color: var(--color-accent);
 }
 
+/* BUTTONS */
 .btn-principal,
 .btn-secundario {
   padding: 0.75rem 1.5rem;
@@ -75,6 +85,8 @@ nav a:hover {
   display: inline-block;
   transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
   text-align: center;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-principal {
@@ -91,7 +103,6 @@ nav a:hover {
 .btn-secundario {
   background-color: var(--color-secondary-accent);
   color: var(--color-light-text);
-  margin-left: 1.5rem;
 }
 
 .btn-secundario:hover {
@@ -100,116 +111,282 @@ nav a:hover {
   box-shadow: 0 4px 10px rgba(187, 34, 42, 0.4);
 }
 
+/* HERO SECTION */
 .hero {
-  min-height: 80vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary-accent) 100%);
   color: var(--color-light-text);
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
   font-weight: 800;
   line-height: 1.2;
 }
 
 .hero p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
 }
 
-.features {
-  padding: 4rem 2rem;
-  text-align: center;
+/* SERVICES SECTION */
+.services {
+  padding: 5rem 2rem;
   background-color: var(--color-background);
 }
 
-.features h2 {
+.services h2 {
+  text-align: center;
   font-size: 2.5rem;
   color: var(--color-primary);
   margin-bottom: 3rem;
   font-weight: 700;
 }
 
-.feature-grid {
+.services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-item {
+  background-color: var(--color-light-text);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-top: 4px solid var(--color-accent);
+}
+
+.service-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.service-item h3 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.service-item p {
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* WHY CHOOSE SECTION */
+.why-choose {
+  padding: 5rem 2rem;
+  background-color: var(--color-light-text);
+}
+
+.why-choose h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-item {
+  text-align: center;
+  padding: 2rem;
+}
+
+.why-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.why-item h3 {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.why-item p {
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* PARTNERS SECTION */
+.partners {
+  padding: 4rem 2rem;
+  background-color: var(--color-background);
+}
+
+.partners h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.feature-item {
-  padding: 2.5rem;
+.partner-item {
   background-color: var(--color-light-text);
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  border-top: 5px solid var(--color-accent);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.feature-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-}
-
-.feature-item .icon {
-  font-size: 3rem;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.feature-item h3 {
-  color: var(--color-primary);
-  margin-top: 0;
-  font-size: 1.5rem;
-}
-
-.feature-item p {
-  font-size: 1rem;
-  color: var(--color-text);
-}
-
-.cta-banner {
+  padding: 2rem;
+  border-radius: 8px;
   text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* CTA SECTION */
+.cta-section {
   padding: 5rem 2rem;
   background-color: var(--color-secondary-accent);
   color: var(--color-light-text);
+  text-align: center;
 }
 
-.cta-banner h2 {
+.cta-section h2 {
   font-size: 2.8rem;
-  margin-bottom: 2.5rem;
-  color: var(--color-light-text);
+  margin-bottom: 1rem;
   font-weight: 700;
 }
 
+.cta-section p {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 4rem 2rem;
+  background-color: var(--color-light-text);
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  text-align: center;
+}
+
+.contact-item strong {
+  display: block;
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.contact-item a:hover {
+  color: var(--color-secondary-accent);
+  text-decoration: underline;
+}
+
+/* FOOTER */
 footer {
   background-color: #1a1a1a;
   color: var(--color-light-text);
-  padding: 2rem;
-  text-align: center;
-  font-size: 0.9rem;
+  padding: 3rem 2rem 1.5rem;
 }
 
-footer p {
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footer-logo-img {
+  height: 60px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.footer-section h4,
+.footer-social h4 {
+  color: var(--color-light-text);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-section a {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
   margin-bottom: 0.5rem;
+  transition: color 0.2s;
+}
+
+.footer-section a:hover {
+  color: var(--color-accent);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .social-links a {
   color: var(--color-accent);
   text-decoration: none;
-  margin: 0 0.7rem;
   transition: color 0.2s;
 }
 
@@ -217,21 +394,30 @@ footer p {
   color: var(--color-light-text);
 }
 
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  header {
+  .header-content {
     flex-direction: column;
-    padding: 1rem 1rem;
+    padding: 1rem;
   }
 
-  header nav {
-    margin-top: 1rem;
-    display: flex;
+  .logo-container {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  nav {
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  nav a {
-    margin: 0.5rem 0.8rem;
+    gap: 1rem;
   }
 
   .btn-secundario {
@@ -243,15 +429,21 @@ footer p {
   }
 
   .hero p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
-  .feature-item {
-    padding: 1.5rem;
+  .services-grid,
+  .why-grid {
+    grid-template-columns: 1fr;
   }
 
-  .cta-banner h2 {
-    font-size: 2rem;
+  .contact-info {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 }
-
