@@ -31,12 +31,14 @@
       <div class="hero-content">
         <h1>Consultora de Marketing Digital</h1>
         <p>Gestión y Análisis de todo tipo de marca</p>
-        <a
-          href="https://wa.me/5492613878157?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20Vitis%20Digital"
-          class="btn-principal"
-          target="_blank"
-          >CONTACTANOS</a
-        >
+        <div class="contact-dropdown">
+          <button class="btn-principal" onclick="document.getElementById('contact-options').classList.toggle('show')">CONTACTANOS</button>
+          <div id="contact-options" class="contact-options">
+            <a href="https://wa.me/5492613878157?text=Hola%21%20Escribo%20por%20m%C3%A1s%20info%20sobre..." target="_blank">WhatsApp</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vitisdigital.agencia@gmail.com&su=Quiero%20m%C3%A1s%20informaci%C3%B3n&body=Hola!%20Escribo%20por%20m%C3%A1s%20info%20sobre..." target="_blank">Gmail</a>
+            <a href="https://outlook.live.com/mail/0/deeplink/compose?to=vitisdigital.agencia@gmail.com&subject=Quiero%20m%C3%A1s%20informaci%C3%B3n&body=Hola!%20Escribo%20por%20m%C3%A1s%20info%20sobre..." target="_blank">Outlook</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -110,13 +112,83 @@
       <div class="container">
         <h2>Plataformas y Herramientas</h2>
         <div class="partners-grid">
-          <div class="partner-item">📱 Instagram</div>
-          <div class="partner-item">👥 Facebook</div>
-          <div class="partner-item">💼 LinkedIn</div>
-          <div class="partner-item">🎵 TikTok</div>
-          <div class="partner-item">🔍 Google Ads</div>
-          <div class="partner-item">📊 Meta Ads</div>
+          <div class="partner-item">
+            <img src="img/manychat.svg" alt="ManyChat" class="partner-icon" onerror="this.style.display='none';" />
+            <span>ManyChat</span>
+          </div>
+          <div class="partner-item">
+            <img src="img/zapier.svg" alt="Zapier" class="partner-icon" onerror="this.style.display='none';" />
+            <span>Zapier</span>
+          </div>
+          <div class="partner-item">
+            <img src="img/hubspot.svg" alt="HubSpot" class="partner-icon" onerror="this.style.display='none';" />
+            <span>HubSpot</span>
+          </div>
+          <div class="partner-item">
+            <img src="img/wix.svg" alt="Wix" class="partner-icon" onerror="this.style.display='none';" />
+            <span>Wix</span>
+          </div>
+          <div class="partner-item">
+            <img src="img/tiendanube.svg" alt="TiendaNube" class="partner-icon" onerror="this.style.display='none';" />
+            <span>TiendaNube</span>
+          </div>
+          <div class="partner-item">
+            <img src="img/metricool.svg" alt="Metricool" class="partner-icon" onerror="this.style.display='none';" />
+            <span>Metricool</span>
+          </div>
+          <div class="partner-item">
+            <img src="img/kajabi.svg" alt="Kajabi" class="partner-icon" onerror="this.style.display='none';" />
+            <span>Kajabi</span>
+          </div>
+          <div class="partner-item">
+            <img src="img/instagram.svg" alt="Instagram" class="partner-icon" onerror="this.style.display='none';" />
+            <span>Instagram</span>
+          </div>
+          <div class="partner-item">
+            <img src="img/facebook.svg" alt="Facebook" class="partner-icon" onerror="this.style.display='none';" />
+            <span>Facebook</span>
+          </div>
+          <div class="partner-item">
+            <img src="img/linkedin.svg" alt="LinkedIn" class="partner-icon" onerror="this.style.display='none';" />
+            <span>LinkedIn</span>
+          </div>
+          <div class="partner-item">
+            <img src="img/tiktok.svg" alt="TikTok" class="partner-icon" onerror="this.style.display='none';" />
+            <span>TikTok</span>
+          </div>
+          <div class="partner-item">
+            <img src="img/googleads.svg" alt="Google Ads" class="partner-icon" onerror="this.style.display='none';" />
+            <span>Google Ads</span>
+          </div>
+          <div class="partner-item">
+            <img src="img/metaads.svg" alt="Meta Ads" class="partner-icon" onerror="this.style.display='none';" />
+            <span>Meta Ads</span>
+          </div>
         </div>
+        <!--
+        Recomendación CSS para estilos de íconos:
+        .partner-icon {
+          width: 32px;
+          height: 32px;
+          vertical-align: middle;
+          margin-right: 8px;
+        }
+        .partners-grid {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+        }
+        .partner-item {
+          display: flex;
+          align-items: center;
+          min-width: 150px;
+          min-height: 48px;
+          background: #f7f7f7;
+          border-radius: 8px;
+          padding: 8px 16px;
+          font-size: 1rem;
+        }
+        -->
       </div>
     </section>
 
@@ -124,12 +196,14 @@
       <div class="container">
         <h2>¿Buscás hacer crecer tu marca?</h2>
         <p>Consultá a nuestros expertos en marketing digital</p>
-        <a
-          href="https://wa.me/5492613878157?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20Vitis%20Digital"
-          class="btn-principal"
-          target="_blank"
-          >CONTÁCTANOS</a
-        >
+        <div class="contact-dropdown">
+          <button class="btn-principal" onclick="document.getElementById('contact-options-cta').classList.toggle('show')">CONTÁCTANOS</button>
+          <div id="contact-options-cta" class="contact-options">
+            <a href="https://wa.me/5492613878157?text=Hola%21%20Escribo%20por%20m%C3%A1s%20info%20sobre..." target="_blank">WhatsApp</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vitisdigital.agencia@gmail.com&su=Quiero%20m%C3%A1s%20informaci%C3%B3n&body=Hola!%20Escribo%20por%20m%C3%A1s%20info%20sobre..." target="_blank">Gmail</a>
+            <a href="https://outlook.live.com/mail/0/deeplink/compose?to=vitisdigital.agencia@gmail.com&subject=Quiero%20m%C3%A1s%20informaci%C3%B3n&body=Hola!%20Escribo%20por%20m%C3%A1s%20info%20sobre..." target="_blank">Outlook</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -147,7 +221,7 @@
           </div>
           <div class="contact-item">
             <strong>Email:</strong>
-            <a href="mailto:contacto@vitisdigital.com">contacto@vitisdigital.com</a>
+            <a href="mailto:vitisdigital.agencia@gmail.com">vitisdigital.agencia@gmail.com</a>
           </div>
         </div>
       </div>
@@ -187,6 +261,64 @@
       </div>
     </footer>
 
+    <style>
+      .contact-dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .contact-options {
+        display: none;
+        position: absolute;
+        background: #fff;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 8px;
+        margin-top: 8px;
+      }
+      .contact-options.show {
+        display: block;
+      }
+      .contact-options a {
+        color: #333;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        border-bottom: 1px solid #eee;
+        transition: background 0.2s;
+      }
+      .contact-options a:last-child {
+        border-bottom: none;
+      }
+      .contact-options a:hover {
+        background: #f7f7f7;
+      }
+    </style>
+    <script>
+      // Cierra el menú si se hace clic fuera o en una opción
+      document.addEventListener('click', function(event) {
+        var isButton = event.target.classList.contains('btn-principal');
+        var isOption = event.target.closest('.contact-options a');
+        var isDropdown = event.target.closest('.contact-options');
+        if (isOption) {
+          // Cierra el menú y permite la redirección
+          setTimeout(function() {
+            var dropdowns = document.getElementsByClassName('contact-options');
+            for (var i = 0; i < dropdowns.length; i++) {
+              dropdowns[i].classList.remove('show');
+            }
+          }, 100);
+        } else if (!isButton && !isDropdown) {
+          var dropdowns = document.getElementsByClassName('contact-options');
+          for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      });
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
