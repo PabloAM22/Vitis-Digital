@@ -1,0 +1,114 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7A1738" />
+      <stop offset="60%" stop-color="#B1273F" />
+      <stop offset="100%" stop-color="#E04B2F" />
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.35)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0.05)" />
+    </linearGradient>
+    <linearGradient id="deskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6B3E25" />
+      <stop offset="100%" stop-color="#8B5130" />
+    </linearGradient>
+    <linearGradient id="brickGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9C3B36" />
+      <stop offset="100%" stop-color="#6B1F21" />
+    </linearGradient>
+    <clipPath id="frame">
+      <rect x="0" y="0" width="1920" height="1080" rx="40" />
+    </clipPath>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bgGrad)" clip-path="url(#frame)" />
+
+  <!-- brick wall -->
+  <g opacity="0.28">
+    <rect x="0" y="0" width="1920" height="1080" fill="url(#brickGrad)" />
+    <g stroke="rgba(255,255,255,0.08)" stroke-width="3">
+      <!-- horizontal lines -->
+      <g>
+        <line x1="0" y1="60" x2="1920" y2="60" />
+        <line x1="0" y1="120" x2="1920" y2="120" />
+        <line x1="0" y1="180" x2="1920" y2="180" />
+        <line x1="0" y1="240" x2="1920" y2="240" />
+        <line x1="0" y1="300" x2="1920" y2="300" />
+        <line x1="0" y1="360" x2="1920" y2="360" />
+        <line x1="0" y1="420" x2="1920" y2="420" />
+        <line x1="0" y1="480" x2="1920" y2="480" />
+        <line x1="0" y1="540" x2="1920" y2="540" />
+        <line x1="0" y1="600" x2="1920" y2="600" />
+        <line x1="0" y1="660" x2="1920" y2="660" />
+        <line x1="0" y1="720" x2="1920" y2="720" />
+        <line x1="0" y1="780" x2="1920" y2="780" />
+        <line x1="0" y1="840" x2="1920" y2="840" />
+        <line x1="0" y1="900" x2="1920" y2="900" />
+        <line x1="0" y1="960" x2="1920" y2="960" />
+      </g>
+      <!-- vertical lines -->
+      <g>
+        <line x1="80" y1="0" x2="80" y2="1080" />
+        <line x1="160" y1="0" x2="160" y2="1080" />
+        <line x1="240" y1="0" x2="240" y2="1080" />
+        <line x1="320" y1="0" x2="320" y2="1080" />
+        <line x1="400" y1="0" x2="400" y2="1080" />
+        <line x1="480" y1="0" x2="480" y2="1080" />
+        <line x1="560" y1="0" x2="560" y2="1080" />
+        <line x1="640" y1="0" x2="640" y2="1080" />
+        <line x1="720" y1="0" x2="720" y2="1080" />
+        <line x1="800" y1="0" x2="800" y2="1080" />
+        <line x1="880" y1="0" x2="880" y2="1080" />
+        <line x1="960" y1="0" x2="960" y2="1080" />
+        <line x1="1040" y1="0" x2="1040" y2="1080" />
+        <line x1="1120" y1="0" x2="1120" y2="1080" />
+        <line x1="1200" y1="0" x2="1200" y2="1080" />
+        <line x1="1280" y1="0" x2="1280" y2="1080" />
+        <line x1="1360" y1="0" x2="1360" y2="1080" />
+        <line x1="1440" y1="0" x2="1440" y2="1080" />
+        <line x1="1520" y1="0" x2="1520" y2="1080" />
+        <line x1="1600" y1="0" x2="1600" y2="1080" />
+        <line x1="1680" y1="0" x2="1680" y2="1080" />
+        <line x1="1760" y1="0" x2="1760" y2="1080" />
+        <line x1="1840" y1="0" x2="1840" y2="1080" />
+      </g>
+    </g>
+  </g>
+
+  <!-- windows -->
+  <g opacity="0.35">
+    <rect x="140" y="120" width="120" height="600" rx="60" fill="url(#glassGrad)" />
+    <rect x="320" y="120" width="120" height="600" rx="60" fill="url(#glassGrad)" />
+    <rect x="500" y="120" width="120" height="600" rx="60" fill="url(#glassGrad)" />
+  </g>
+
+  <!-- desk -->
+  <rect x="260" y="620" width="1400" height="160" fill="url(#deskGrad)" rx="30" />
+  <rect x="420" y="620" width="1080" height="220" fill="rgba(0,0,0,0.15)" rx="20" opacity="0.4" />
+
+  <!-- chairs -->
+  <g fill="#D9D9DA" stroke="rgba(0,0,0,0.1)" stroke-width="4">
+    <rect x="380" y="520" width="120" height="140" rx="40" />
+    <rect x="600" y="520" width="120" height="140" rx="40" />
+    <rect x="820" y="520" width="120" height="140" rx="40" />
+    <rect x="1040" y="520" width="120" height="140" rx="40" />
+    <rect x="1260" y="520" width="120" height="140" rx="40" />
+    <rect x="1480" y="520" width="120" height="140" rx="40" />
+  </g>
+
+  <!-- screens and details -->
+  <rect x="1280" y="240" width="420" height="240" rx="20" fill="rgba(0,0,0,0.35)" />
+  <circle cx="1350" cy="300" r="18" fill="#E34D2F" />
+  <circle cx="1400" cy="300" r="18" fill="#E89459" />
+  <circle cx="1450" cy="300" r="18" fill="#F4C077" />
+  <rect x="1320" y="340" width="320" height="120" rx="16" fill="rgba(255,255,255,0.08)" />
+
+  <!-- abstract canvas -->
+  <rect x="980" y="200" width="160" height="320" rx="20" fill="rgba(255,255,255,0.16)" />
+  <path d="M1010 220 Q1100 280 1030 330 Q970 380 1050 420 Q1130 460 1070 500 L990 500 Z" fill="rgba(233,120,82,0.8)" />
+
+  <!-- overlay for clarity -->
+  <rect width="1920" height="1080" fill="rgba(0,0,0,0.08)" />
+</svg>
+

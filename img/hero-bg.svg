@@ -1,0 +1,27 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9D174D" />
+      <stop offset="60%" stop-color="#BB222A" />
+      <stop offset="100%" stop-color="#E53207" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.18)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#grad)" />
+  <circle cx="350" cy="260" r="220" fill="url(#accent)" />
+  <circle cx="1680" cy="180" r="180" fill="url(#accent)" />
+  <circle cx="1520" cy="820" r="250" fill="rgba(255,255,255,0.08)" />
+  <circle cx="460" cy="870" r="190" fill="rgba(255,255,255,0.12)" />
+  <path d="M0 700 C480 580 800 1040 1920 820 L1920 1080 L0 1080 Z" fill="rgba(255,255,255,0.06)" />
+  <path d="M0 540 C620 360 1080 960 1920 700 L1920 1080 L0 1080 Z" fill="rgba(255,255,255,0.04)" />
+  <text x="200" y="200" font-family="'Segoe UI', sans-serif" font-size="110" fill="rgba(255,255,255,0.08)" letter-spacing="6">
+    DIGITAL
+  </text>
+  <text x="1180" y="940" font-family="'Segoe UI', sans-serif" font-size="90" fill="rgba(255,255,255,0.06)" letter-spacing="8">
+    MARKETING
+  </text>
+</svg>
+
